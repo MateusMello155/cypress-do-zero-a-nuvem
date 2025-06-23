@@ -1,28 +1,52 @@
-# 🌲 Cypress, do Zero à Nuvem ☁️
+# Cypress, do Zero à Nuvem
 
-👋 Seja bem-vindo(a)!
+Este repositório apresenta uma estrutura básica para automação de testes utilizando Cypress, pronta para execução tanto em ambiente desktop quanto mobile.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai amar esse curso. ❤️
+## Pré-requisitos
 
-## O que você vai aprender?
+Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar upload de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
-- Como executar os testes em um _workflow_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como integrar seu _workflow_ de integração contínua com o Cypress Cloud (o serviço de gestão de testes do Cypress na nuvem)
+- **Git**: `2.49.0.windows.1`
+- **Node.js**: `22.12.0`
+- **npm**: `10.9.0`
 
-## Vamos começar?
+> Essas foram as versões que eu utilizei.
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+## Instalação
 
-___
+Clone o repositório e instale as dependências de desenvolvimento:
+> - npm install
 
-Este é um curso da **Escola Talking About Testing**.
+
+## Execução dos Testes
+
+O projeto está configurado para rodar testes tanto em ambiente **desktop** quanto **mobile**.
+
+### Desktop
+
+- **Modo headless** (sem interface gráfica):
+
+>npm run test
+
+- **Modo interativo** (Cypress App, viewport desktop):
+
+>npm run cy:open
+
+### Mobile
+
+- **Modo headless** (simulando viewport mobile):
+
+>npm run test:mobile
+
+- **Modo interativo** (Cypress App, viewport mobile):
+
+>npm run cy:open:mobile
+
+## Observações
+
+- Certifique-se de que todas as dependências foram instaladas corretamente antes de rodar os comandos de teste.
+- Os scripts estão configurados no `package.json` para facilitar a execução nos diferentes ambientes.
+
+---
+
+Sinta-se à vontade para contribuir ou abrir issues em caso de dúvidas!
