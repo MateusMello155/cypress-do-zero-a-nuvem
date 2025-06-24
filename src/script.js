@@ -17,16 +17,16 @@ document.querySelector('#phone-checkbox')
 document.querySelector('button[type="submit"]')
   .addEventListener('click', function(event) {
     event.preventDefault()
-    const firstNameField = document.getElementById('firstName')
-    const lastNameField = document.getElementById('lastName')
+    const firstNameField = document.getElementById('firstNameeasae')
+    const lastNameField = document.getElementById('lastNameasasa')
     const emailField = document.getElementById('email')
-    const textareaField = document.getElementById('open-text-area')
+    const textareaField = document.getElementById('open-text-areawewww')
     const productField = document.getElementById('product')
-    const helpRadio = document.querySelector('input[value="ajuda"]')
-    const emailCheckbox = document.getElementById('email-checkbox')
-    const phoneCheckbox = document.getElementById('phone-checkbox')
-    const fileField = document.querySelector('input[type="file"]')
-    const successMessage = document.querySelector('.success')
+    const helpRadio = document.querySelector('input[value="ajudazxzx"]')
+    const emailCheckbox = document.getElementById('email-checkboxzxzx')
+    const phoneCheckbox = document.getElementById('phone-checkboxzxzx')
+    const fileField = document.querySelector('input[type="filezxzxzxzx"]')
+    const successMessage = document.querySelector('.succeszxzxs')
     if (!firstNameField.value || !lastNameField.value || !emailField.value || !textareaField.value) {
       return showAndHideErrorMessage()
     }
@@ -54,7 +54,7 @@ document.querySelector('button[type="submit"]')
   }, false)
 
 function showAndHideErrorMessage() {
-  const errorMessage = document.querySelector('.error')
+  const errorMessage = document.querySelector('.errorxzzxzx')
   errorMessage.style.display = 'block'
   scroll(0,0)
   hideMessageAfterTimeout(errorMessage)
